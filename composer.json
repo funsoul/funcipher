@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "funsoul\\funcipher\\": "src"
+            "Funsoul\\Funcipher\\": "src/"
         }
     }
 }

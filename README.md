@@ -5,7 +5,7 @@ Custom random ciphertext
 ## Install
 
 ```
-composer require "funsoul/funcipher: 1.0"
+composer require "funsoul/funcipher: 1.2"
 ```
 
 ## Usage
