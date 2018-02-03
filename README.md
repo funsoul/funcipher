@@ -2,13 +2,22 @@ funcipher
 ======
 Custom random ciphertext
 
-## Install
+# Install
 
 ```
-composer require "funsoul/funcipher: 1.3"
+composer require "funsoul/funcipher: ~1.3"
 ```
 
-## Usage
+# Usage
+
+Global Variable
+
+```php
+CIPHER_USE_LOWER
+CIPHER_USE_CAPITAL
+CIPHER_USE_NUMBER
+CIPHER_USE_SPECIAL
+```
 
 ```php
 use Funsoul\Funcipher\Funcipher;
