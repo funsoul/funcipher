@@ -5,7 +5,7 @@ Custom random ciphertext
 # Install
 
 ```
-composer require "funsoul/funcipher: ~1.3"
+composer require "funsoul/funcipher: 2.0"
 ```
 
 # Usage
@@ -18,12 +18,30 @@ CIPHER_USE_CAPITAL
 CIPHER_USE_NUMBER
 CIPHER_USE_SPECIAL
 ```
-
+### create()
 ```php
 use Funsoul\Funcipher\Funcipher;
 
-echo Funcipher::create(10,[CIPHER_USE_LOWER,CIPHER_USE_CAPITAL,CIPHER_USE_NUMBER]);
-// 5C987I9d8L
+$cipher = new Funcipher();
+echo $cipher->create(10);
+// ,+T=!V67|E
+
+```
+### ignore()
+```php
+use Funsoul\Funcipher\Funcipher;
+
+$cipher = new Funcipher();
+echo $cipher->ignore(['a',1,3,5,7])->create(10);
+// w0/22S0i2~
+```
+### Customize code
+```php
+use Funsoul\Funcipher\Funcipher;
+
+$cipher = new Funcipher();
+echo $cipher->ignore([1,3,5,7])->create(10,[CIPHER_USE_NUMBER]);
+// 4288062890
 ```
 
 # License
