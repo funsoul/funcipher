@@ -1,0 +1,21 @@
+{
+    "name": "funsoul/funcipher",
+    "description": "Custom random ciphertext",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "funsoul",
+            "email": "cyanming2016@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+	"php": "5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "funsoul\\funcipher\\": "src"
+        }
+    }
+}
